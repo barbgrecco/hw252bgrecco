@@ -18,9 +18,11 @@ public class InfoActivity extends Activity {
         // Enable the up affordance
         getActionBar().setDisplayHomeAsUpEnabled(true);
         
+        // get the text string to display from the bundle extras
         Bundle b = getIntent().getExtras();
         String taskIdString = b.getString("info");
         
+        // display text in the textView item 
         TextView tv = (TextView)this.findViewById(R.id.infoTextView);
         if (tv != null){
         	tv.setText(taskIdString);

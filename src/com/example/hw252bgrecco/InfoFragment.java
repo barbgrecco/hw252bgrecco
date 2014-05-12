@@ -16,7 +16,7 @@ public class InfoFragment extends Fragment {
 	    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
  
-	        // Inflate the layout for this fragment and set the color
+	        // Inflate the layout for this fragment and set the text for task info
 	        View v = inflater.inflate(R.layout.info_layout, container, false);
 	        mTv = (TextView)v.findViewById(R.id.infoTextView);
 	        if (mTv != null){
@@ -28,6 +28,7 @@ public class InfoFragment extends Fragment {
 	    
 	    @Override
 		public void onResume() {
+	        // make sure we have a valid text view instance and set the task info string	    	
 			if (mTv == null){
 				View view = this.getView();
 		        if (view != null){	
@@ -40,7 +41,7 @@ public class InfoFragment extends Fragment {
 
 
 		public void setText(String taskIdString) {        
-	        
+	        // make sure we have a valid text view instance and set the task info string
 			if (mTv == null){
 				View view = this.getView();
 		        if (view != null){	

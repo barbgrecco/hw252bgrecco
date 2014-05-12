@@ -15,7 +15,6 @@
         android:listSelector="@android:color/darker_gray"/>
 
     <FrameLayout
-       android:name="com.example.hw252bgrecco.InfoFragment"        
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
